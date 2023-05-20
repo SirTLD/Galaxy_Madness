@@ -1,8 +1,8 @@
 "use client";
 
-import { use, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { TypingText, exploreCard, TitleText, ExploreCard } from "../components";
+import { TypingText, ExploreCard, TitleText } from "../components";
 
 import styles from "../styles";
 
@@ -19,7 +19,7 @@ const Explore = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: "false", amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <TypingText title="| The World" textStyles="text-center" />
