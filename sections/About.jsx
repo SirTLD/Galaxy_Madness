@@ -22,17 +22,17 @@ const About = () => (
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
-        <span className="font-extrabold text-white">Galaxity </span> is a new
+        <span className="font-extrabold text-white">Galaxity</span> is a new
         thing in the future, where you can enjoy the virtual world by feeling
         like it's really real, you can feel what you feel in this Galaxity
-        world, because this is really the
+        world, because this is really the{" "}
         <span className="font-extrabold text-white">
           madness of the Galaxity
-        </span>
-        of today, using only
+        </span>{" "}
+        of today, using only{" "}
         <span className="font-extrabold text-white">VR</span> devices you can
         easily explore the Galaxity world you want, turn your dreams into
-        reality. Let's
+        reality. Let's{" "}
         <span className="font-extrabold text-white">explore</span> of Galaxity
         by scrolling down
       </motion.p>
