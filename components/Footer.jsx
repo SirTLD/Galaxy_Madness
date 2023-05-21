@@ -14,6 +14,7 @@ const Footer = () => (
     whileInView="show"
     className={`${styles.paddings} py-8 relative`}
   >
+    <div>Hello</div>
     <div className="footer-graident" />
   </motion.footer>
 );
