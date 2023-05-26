@@ -1,38 +1,38 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { TypingText, ExploreCard, TitleText } from "../components";
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { TypingText, ExploreCard, TitleText } from '../components';
 
-import styles from "../styles";
+import styles from '../styles';
 
-import { staggerContainer } from "../utils/motion";
+import { staggerContainer } from '../utils/motion';
 
-import { exploreWorlds } from "../constants";
+import { exploreWorlds } from '../constants';
 
 const Explore = () => {
-  const [active, setActive] = useState("world-2");
+  const [active, setActive] = useState('world-2');
 
   return (
-    <section className={`${styles.paddings}`} id="explore">
+    <section className={`${styles.paddings}`} id='explore'>
       <motion.div
         variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: "false", amount: 0.25 }}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: 'false', amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
-        <TypingText title="| The World" textStyles="text-center" />
+        <TypingText title='| The World' textStyles='text-center' />
         <TitleText
           title={
             <>
-              Choose The World You Want <br className="md:block hidden" />
+              Choose The World You Want <br className='md:block hidden' />
               To Explore
             </>
           }
-          textStyles="text-center"
+          textStyles='text-center'
         />
-        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
+        <div className='mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5'>
           {exploreWorlds.map((world, index) => (
             <ExploreCard
               key={world.id}
