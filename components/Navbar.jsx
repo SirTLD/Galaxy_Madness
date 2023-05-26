@@ -20,7 +20,7 @@ const Navbar = () => (
         className="w-24[px] h-[24px] object-contain cursor-pointer"
       />
       <h2 className="font-extrabold text-[24px] leading-[30px] text-white">
-        UCHIHA ITACHI
+        EXPLORE GALAXICITY
       </h2>
       <img
         src="/menu.svg"
