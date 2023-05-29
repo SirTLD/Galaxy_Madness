@@ -3,6 +3,7 @@ import React from 'react';
 
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
+import PropTypes from 'prop-types';
 
 const InsightCard = ({ imgUrl, title, subtitle, index }) => (
     <motion.div
@@ -33,5 +34,13 @@ const InsightCard = ({ imgUrl, title, subtitle, index }) => (
         </div>
     </motion.div>
 );
+
+InsightCard.propTypes = {
+    title:PropTypes.string,
+    subtitle: PropTypes.string,
+    index:PropTypes.number,
+    imgUrl:PropTypes.string
+
+};
 
 export default InsightCard;

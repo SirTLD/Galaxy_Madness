@@ -1,5 +1,7 @@
 import styles from '../styles';
 import React from 'react';
+import PropTypes  from 'prop-types';
+
 
 const StartSteps = ({ number, text }) => (
     <div className={`${styles.flexCenter} flex-row`}>
@@ -13,5 +15,11 @@ const StartSteps = ({ number, text }) => (
         </p>
     </div>
 );
+
+StartSteps.propTypes = {
+    number:PropTypes.number,
+    text: PropTypes.string,
+  
+};
 
 export default StartSteps;

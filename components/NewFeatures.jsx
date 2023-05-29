@@ -1,5 +1,6 @@
 import styles from '../styles';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const NewFeatures = ({ imgUrl, title, subtitle }) => (
     <div className='flex-1 flex flex-col sm:max-w-[250px] min-w-[210px] '>
@@ -17,4 +18,10 @@ const NewFeatures = ({ imgUrl, title, subtitle }) => (
     </div>
 );
 
+NewFeatures.propTypes = {
+    title:PropTypes.string,
+    subtitle: PropTypes.string,
+    imgUrl:PropTypes.string
+
+};
 export default NewFeatures;

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import styles from '../styles';
 import { fadeIn } from '../utils/motion';
+import PropTypes  from 'prop-types';
 
 const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
     <motion.div
@@ -50,5 +51,15 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
         )}
     </motion.div>
 );
+
+ExploreCard.propTypes = {
+    title:PropTypes.string,
+    active: PropTypes.bool,
+    index:PropTypes.number,
+    handleClick:PropTypes.func,
+    imgUrl:PropTypes.string,
+    id:PropTypes.string
+};
+
 
 export default ExploreCard;
