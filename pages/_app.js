@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps }) => (
@@ -19,4 +19,9 @@ const MyApp = ({ Component, pageProps }) => (
     </>
 );
 
+MyApp.propTypes = {
+    Component:PropTypes.element,
+    pageProps:PropTypes.element
+};
 export default MyApp;
+ 
